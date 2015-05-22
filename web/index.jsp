@@ -19,12 +19,14 @@
         <title></title>
     </head>
     <body>
-        <h1>Date: <%=new java.util.Date()%></h1>
+        <h1>Прайс лист v0.1. Date: <%=new java.util.Date()%></h1>
         <form name="form1" action="index.jsp">
-            <input type="submit" value="Refresh" name="SearchButtom" />
-        </form>
+            <input type="submit" value="Refresh page" name="SearchButtom" />
+            
+        
         <table border="2">
-              <tr>    
+              <tr> 
+                <td>Category</td>
                 <td>Id</td>
                 <td>Name</td>
                 <td>Price</td>
@@ -33,7 +35,7 @@
              try {
                     ControlApp app = new ControlApp();
                     List<Prod> resault = app.getAllProducts();
-    
+                    
                     for(Prod product: resault) {
             %>                              
             <tr>  
@@ -53,5 +55,6 @@
              %>
            
         </table>
+             </form>
     </body>
 </html>

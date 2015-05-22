@@ -46,7 +46,9 @@ public class ControlApp {
                 System.out.println("getAllProducts:");
             Transaction tx = session.beginTransaction();
                 System.out.println("Session was started");
-            Query q = session.createQuery("from Prod");
+            String hql = "from Prod";
+            Query q = session.createQuery(hql);
+            
                 System.out.println("Query was created");
             resault = (List<Prod>) q.list();
          
@@ -57,17 +59,21 @@ public class ControlApp {
         }
     }
     
+    
     public static void main(String[] args){
        
         ControlApp app = new ControlApp();
         System.out.println("ControlApp main start");
         
-        List<Prod> resault = app.getAllProducts();
+        List<Prod> resaultProduct = app.getAllProducts();
+       
         System.out.println("List print");
         
-        for(Prod product: resault) {
+        for(Prod product: resaultProduct) {
             System.out.print("Product name: " + product.getProdName() );
-            System.out.println("\tPrice: " + product.getPrice() );
+            System.out.print("\tPrice: " + product.getPrice() );
+            System.out.println("\tCat: " + product.getCatName() );
+            
         }
     }
     
