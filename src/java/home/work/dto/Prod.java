@@ -13,21 +13,26 @@ import java.io.Serializable;
 @Table(name="prod")
 
 public class Prod  implements Serializable {
-     private Integer prodId;
-     private Cat cat;     
-     private String prodName;
-     private BigDecimal price;
+//public class Prod {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "prod_id")
+    private Integer prodId;
     
+    private Cat cat;    
+    @Column(name = "prod_name")
+    private String prodName;
+    @Column(name = "price")
+    private BigDecimal price;
+     
+    public Prod() {}
     
-/*
+
     public Prod(Cat cat, String prodName, BigDecimal price) {
        this.cat = cat;
        this.prodName = prodName;
        this.price = price;
     }
-     */
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     
     public Integer getProdId() {
         return this.prodId;

@@ -35,10 +35,11 @@
              try {
                     ControlApp app = new ControlApp();
                     List<Prod> resault = app.getAllProducts();
-                    
+                   
                     for(Prod product: resault) {
             %>                              
-            <tr>  
+            <tr> 
+                <td><%=product.getCatName() %> </td> 
                 <td><%=product.getProdId()%> </td>
                 <td><%=product.getProdName()%> </td>
                 <td><%=product.getPrice()%> </td>>
