@@ -8,11 +8,11 @@
             <column name="prod_id" />
             <generator class="native" /> <!--identity  -->
         </id>
-        <!--
+        
         <many-to-one name="cat" class="home.work.dto.Cat" fetch="select">
             <column name="cat_id" />
         </many-to-one>
-        -->
+       
         <property name="prodName" type="string">
             <column name="prod_name" />
         </property>

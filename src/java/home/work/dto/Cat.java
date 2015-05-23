@@ -13,10 +13,13 @@ import javax.persistence.*;
 @Entity
 @Table(name="cat")
 public class Cat  implements java.io.Serializable {
-
-
+    @Id
+    @Column(name="cat_id")
+    @GeneratedValue
      private Integer catId;
+    @Column(name="cat_name")
      private String catName;
+    @OneToMany(mappedBy = "cat")
      private Set<Prod> prods = new HashSet<Prod>(0);
 
     public Cat() {
@@ -26,7 +29,7 @@ public class Cat  implements java.io.Serializable {
        this.catName = catName;
        this.prods = prods;
     }
-   
+   @Column(name="catId",nullable=false)
     public Integer getCatId() {
         return this.catId;
     }
@@ -34,6 +37,7 @@ public class Cat  implements java.io.Serializable {
     public void setCatId(Integer catId) {
         this.catId = catId;
     }
+    @Column(name="catName", nullable=false)
     public String getCatName() {
         return this.catName;
     }
@@ -41,6 +45,7 @@ public class Cat  implements java.io.Serializable {
     public void setCatName(String catName) {
         this.catName = catName;
     }
+    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="categories")
     public Set<Prod> getProds() {
         return this.prods;
     }

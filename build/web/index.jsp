@@ -27,21 +27,22 @@
         <table border="2">
               <tr> 
                 <td>Category</td>
-                <td>Id</td>
                 <td>Name</td>
                 <td>Price</td>
+                <td>Id</td>
             </tr>
             <%  
              try {
                     ControlApp app = new ControlApp();
-                    List<Prod> resault = app.getAllProducts();
-                    
+                    List<Prod> resault = app.getAllProducts();                  
                     for(Prod product: resault) {
             %>                              
-            <tr>  
-                <td><%=product.getProdId()%> </td>
-                <td><%=product.getProdName()%> </td>
-                <td><%=product.getPrice()%> </td>>
+            <tr> 
+                <td><%=product.getCat().getCatName() %> </td> 
+                <td><%=product.getProdName() %> </td>
+                <td><%=product.getPrice() %> </td>>
+                <td><%=product.getProdId() %> </td>
+                <!-- product.getCat().getCatName()); -->
             </tr>
             <%
                     } 

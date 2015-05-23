@@ -21,12 +21,7 @@ public class HibernateUtil {
     
     static {
         try {
-             //Создаем новый екземпляр AnnotationConfiguration
-             //AnnotationConfiguration ac = new AnnotationConfiguration();
-             //Это нам нужно для того, чтобы мы добавили все наши классы сущности. 
-             //каждый ваш Entity здесь нужно прописать, не пропишете - не будет работать. 
-             //ac.addAnnotatedClass(Prod.class);
-            //sessionFactory = ac.configure().buildSessionFactory();
+             
             sessionFactory = new Configuration().configure().buildSessionFactory();
         } catch (Throwable ex) {
             // Log the exception. 
@@ -34,7 +29,6 @@ public class HibernateUtil {
             throw new ExceptionInInitializerError(ex);
         }
     }
-
     public static SessionFactory getSessionFactory() {
       
         return sessionFactory;
