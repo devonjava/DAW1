@@ -1,4 +1,4 @@
-package home.work.dto;
+package Model.Entity;
 // Generated 22.05.2015 17:35:12 by Hibernate Tools 4.3.1
 
 

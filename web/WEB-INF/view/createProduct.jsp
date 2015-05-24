@@ -1,6 +1,6 @@
 <%-- 
-    Document   : scripts
-    Created on : 23.05.2015, 0:24:04
+    Document   : createProduct
+    Created on : 24.05.2015, 21:02:20
     Author     : micx
 --%>
 
@@ -15,13 +15,3 @@
         <h1>Hello World!</h1>
     </body>
 </html>
-<!-- 
-
-select cat.cat_name, prod.prod_id, prod.prod_name, prod.price 
-FROM prod
-RIGHT OUTER JOIN  cat
-ON prod.cat_id = cat.cat_id
-
-
-
--->
