@@ -5,23 +5,18 @@
             <url>src/java/home/work/dto/ControlApp.java</url>
             <bookmark id="1">
                 <name/>
-                <line>135</line>
+                <line>104</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/home/work/dto/HibernateUtil.java</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/Main.java</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/home/work/dto/Prod.hbm.xml</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/home/work/dto/Cat.java</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/home/work/dto/Prod.java</file>
-            <file>file:/D:/ImprooveGroup/DAW1/web/scripts.jsp</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/hibernate.cfg.xml</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/hibernate.reveng.xml</file>
-            <file>file:/D:/ImprooveGroup/DAW1/web/index.jsp</file>
-            <file>file:/D:/ImprooveGroup/DAW1/src/java/home/work/dto/ControlApp.java</file>
+            <file>file:/D:/ImprooveGroup/DAW1/src/java/Model/Entity/Prod.hbm.xml</file>
+            <file>file:/D:/ImprooveGroup/DAW1/src/java/Model/DAO/ControlApp.java</file>
+            <file>file:/D:/ImprooveGroup/DAW1/src/java/Model/Entity/Cat.hbm.xml</file>
+            <file>file:/D:/ImprooveGroup/DAW1/src/conf/MANIFEST.MF</file>
+            <file>file:/D:/ImprooveGroup/DAW1/src/java/Model/DAO/HibernateUtil.java</file>
         </group>
     </open-files>
 </project-private>
